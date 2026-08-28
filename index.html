@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d566f">
   <meta name="description" content="Mobile-first 2026/27 enrolment decision-support app for 16–19, adult and home-schooled learners.">
-  <title>Enrolment Assistant 2026/27 — v11.0</title>
+  <title>Enrolment Assistant 2026/27 — v12.0</title>
   <style>
     :root {
       color-scheme: light;
@@ -871,7 +871,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="header-copy">
-          <p class="eyebrow">Multi-route · 2026/27 · Version 11.0</p>
+          <p class="eyebrow">Multi-route · 2026/27 · Version 12.0</p>
           <h1>Enrolment Assistant</h1>
           <p class="header-sub">Choose the learner route first, then move through Learner, Course, Details and Action. The app uses the latest attached 16–19, adult and home-school information without confirmation tick boxes.</p>
         </div>
@@ -883,10 +883,10 @@
         </div>
       </div>
       <div class="header-badges">
-        <span class="header-badge">71 latest 16–19 rows</span>
+        <span class="header-badge">73 latest 16–19 rows</span>
         <span class="header-badge">21 adult offerings with codes</span>
         <span class="header-badge">8 home-school sessions</span>
-        <span class="header-badge">158 black cells blocked</span>
+        <span class="header-badge">162 black cells blocked</span>
         <span class="header-badge">Runs on this device</span>
       </div>
     </div>
@@ -1191,10 +1191,10 @@
      ============================================================================
 
      SOURCE OF TRUTH FOR THIS BUILD
-     - Enrolment Friendly Grid (1).xlsx
+     - 16 19 update file(1).xlsx
      - Worksheet: AY
-     - Imported course rows: 6 to 76 inclusive (71 courses)
-     - Blacked-out Maths/English cells: 158
+     - Imported course rows: 6 to 78 inclusive (73 courses)
+     - Blacked-out Maths/English cells: 162
 
      THIS IS THE SECTION TO EDIT WHEN A MATHS OR ENGLISH GROUP FILLS UP OR MOVES.
 
@@ -1244,16 +1244,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1276,16 +1276,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1308,16 +1308,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1340,16 +1340,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "C1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "C2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "C1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "C2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "C1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "C2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "C1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "C2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1372,16 +1372,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "C1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "C2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "C1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "C2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "C1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "C2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "C1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "C2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1404,16 +1404,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "B1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "B1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1436,16 +1436,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "B1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "B1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1468,16 +1468,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "B1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "B1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1500,16 +1500,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "D1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "D1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "D5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "D1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "D1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "D1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "D1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "D1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "D1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -1532,16 +1532,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have grade 4 in Maths",
@@ -1564,16 +1564,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have grade 4 in Maths",
@@ -1596,16 +1596,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "G2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "G2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "G2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "G2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "G1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "G1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "G1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1628,16 +1628,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "H2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "H2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "H5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "H2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "H2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "H1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -1660,16 +1660,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "G1" is not allocatable; keep null unless the official cell reopens.
-        plus: "H2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "H5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
+        plus: "H2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "G1" is not allocatable; keep null unless the official cell reopens.
-        plus: "H2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
+        plus: "H2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -1692,16 +1692,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "A1" is not allocatable; keep null unless the official cell reopens.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A1"). Keep null unless the official cell reopens.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have Maths at grade 4 or above",
@@ -1724,16 +1724,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have Maths at Grade 4 or above",
@@ -1756,16 +1756,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "A2" is not allocatable; keep null unless the official cell reopens.
-        plus: "A5", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "A2" is not allocatable; keep null unless the official cell reopens.
-        plus: "A5", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        plus: "A5", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -1788,16 +1788,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "A2" is not allocatable; keep null unless the official cell reopens.
-        plus: "A5", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "A2" is not allocatable; keep null unless the official cell reopens.
-        plus: "A5", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        plus: "A5", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -1820,16 +1820,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "B3", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "B3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -1852,16 +1852,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "G2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "G2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "G2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "G2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "G1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "G1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "G1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1884,16 +1884,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "C2" is not allocatable; keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Visible source text "C3" is not allocatable; keep null unless the official cell reopens.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "C2"). Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "C3"). Keep null unless the official cell reopens.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "C2" is not allocatable; keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Visible source text "C3" is not allocatable; keep null unless the official cell reopens.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "C2"). Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "C3"). Keep null unless the official cell reopens.
+        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -1916,16 +1916,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "D1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "D5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "D1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "D2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "D2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -1948,16 +1948,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "G1" is not allocatable; keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Visible source text "G3" is not allocatable; keep null unless the official cell reopens.
-        resit: "H5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "G3"). Keep null unless the official cell reopens.
+        resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "H1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths, any grade in English",
@@ -1980,16 +1980,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2012,16 +2012,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2044,16 +2044,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2076,16 +2076,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2108,16 +2108,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English - FS group for Acc learners only",
@@ -2140,16 +2140,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2172,16 +2172,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "F5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "F5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "F5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "F5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2204,16 +2204,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "D5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2236,16 +2236,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "S", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "S", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "S", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "S", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2268,16 +2268,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "T", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "T", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "T", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "T", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2300,16 +2300,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "U", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "U", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "U", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "U", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2332,16 +2332,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "V", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "V", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "V", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "V", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "***SPECIAL INSTRUCTION*** This group is allowed to have a GCSE option for one of the two retakes it need. please enrol to group G3 for English and G3 for Maths",
@@ -2350,11 +2350,43 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 41 | COURSE CODE: FPAPRXXCT/AY
-    // COURSE NAME: Pathway to Progression
+    // SOURCE SPREADSHEET ROW 41 | COURSE CODE: FACCELXXX/AY/E
+    // COURSE NAME: Accelerate - Group E
     // ------------------------------------------------------------------------
     {
       sourceRow: 41,
+      code: "FACCELXXX/AY/E",
+      campus: "AY",
+      mainGroup: "V",
+      faculty: "L - Foundation Learning & ESOL",
+      area: "FDN - AY",
+      name: "Accelerate - Group E",
+
+      // MATHS GROUPS ONLY — these three lines control Maths allocations.
+      maths: {
+        fs: "F3", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+      },
+
+      // ENGLISH GROUPS ONLY — edit these separately from Maths.
+      english: {
+        fs: "F2", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+      },
+
+      entry: "Extra group added.",
+      fsRestrictedToAccelerate: false,
+      specialAccelerateD: false
+    },
+
+    // ------------------------------------------------------------------------
+    // SOURCE SPREADSHEET ROW 42 | COURSE CODE: FPAPRXXCT/AY
+    // COURSE NAME: Pathway to Progression
+    // ------------------------------------------------------------------------
+    {
+      sourceRow: 42,
       code: "FPAPRXXCT/AY",
       campus: "AY",
       mainGroup: "W",
@@ -2364,16 +2396,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "W", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "W", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "W", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "W", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2382,11 +2414,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 42 | COURSE CODE: FPASEXXCT/AY
+    // SOURCE SPREADSHEET ROW 43 | COURSE CODE: FPASEXXCT/AY
     // COURSE NAME: Pathway to Supported Employment
     // ------------------------------------------------------------------------
     {
-      sourceRow: 42,
+      sourceRow: 43,
       code: "FPASEXXCT/AY",
       campus: "AY",
       mainGroup: "W",
@@ -2396,16 +2428,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "X", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "X", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "X", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: "X", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2414,11 +2446,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 43 | COURSE CODE: FGADVL3DP/AY
+    // SOURCE SPREADSHEET ROW 44 | COURSE CODE: FGADVL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Games Design (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 43,
+      sourceRow: 44,
       code: "FGADVL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2428,16 +2460,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2446,11 +2478,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 44 | COURSE CODE: FGAMEL3DP/AY
+    // SOURCE SPREADSHEET ROW 45 | COURSE CODE: FGAMEL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Game Art (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 44,
+      sourceRow: 45,
       code: "FGAMEL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2460,16 +2492,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2478,11 +2510,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 45 | COURSE CODE: FGADVL3ED/AY
+    // SOURCE SPREADSHEET ROW 46 | COURSE CODE: FGADVL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Games Design (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 45,
+      sourceRow: 46,
       code: "FGADVL3ED/AY",
       campus: "AY",
       mainGroup: "B",
@@ -2492,16 +2524,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "B1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "B1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2510,11 +2542,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 46 | COURSE CODE: FGAMEL3ED/AY
+    // SOURCE SPREADSHEET ROW 47 | COURSE CODE: FGAMEL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Game Art (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 46,
+      sourceRow: 47,
       code: "FGAMEL3ED/AY",
       campus: "AY",
       mainGroup: "B",
@@ -2524,16 +2556,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "B1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "B1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "B1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "B2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2542,11 +2574,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 47 | COURSE CODE: FHANBL1CT/AY
+    // SOURCE SPREADSHEET ROW 48 | COURSE CODE: FHANBL1CT/AY
     // COURSE NAME: Level 1 Study Programme: Introduction to Hair & Beauty
     // ------------------------------------------------------------------------
     {
-      sourceRow: 47,
+      sourceRow: 48,
       code: "FHANBL1CT/AY",
       campus: "AY",
       mainGroup: "H",
@@ -2556,16 +2588,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "H1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "H2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "H5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "H1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "H2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "H1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -2574,11 +2606,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 48 | COURSE CODE: FMOTOL1DP/AY/A
+    // SOURCE SPREADSHEET ROW 49 | COURSE CODE: FMOTOL1DP/AY/A
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 48,
+      sourceRow: 49,
       code: "FMOTOL1DP/AY/A",
       campus: "AY",
       mainGroup: "G",
@@ -2588,16 +2620,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "G2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "G2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "G1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2606,11 +2638,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 49 | COURSE CODE: FMOTOL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 50 | COURSE CODE: FMOTOL2DP/AY/A
     // COURSE NAME: Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 49,
+      sourceRow: 50,
       code: "FMOTOL2DP/AY/A",
       campus: "AY",
       mainGroup: "A",
@@ -2620,16 +2652,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "F2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "F3", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "F4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "F2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "F3", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "F4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "F1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "F2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "F5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "F1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "F2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "F5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Need both M&E at grade 4",
@@ -2638,11 +2670,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 50 | COURSE CODE: FPUBLL390/AY
+    // SOURCE SPREADSHEET ROW 51 | COURSE CODE: FPUBLL390/AY
     // COURSE NAME: Level 3 Study Programme: Entry to Uniformed Services (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 50,
+      sourceRow: 51,
       code: "FPUBLL390/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2652,16 +2684,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "E1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "E1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "E5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "E1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "E1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "E1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "E1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "E5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "E1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "E1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2670,11 +2702,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 51 | COURSE CODE: FPUBLL2DP/AY
+    // SOURCE SPREADSHEET ROW 52 | COURSE CODE: FPUBLL2DP/AY
     // COURSE NAME: Level 2 Study Programme: Entry to Uniformed Services
     // ------------------------------------------------------------------------
     {
-      sourceRow: 51,
+      sourceRow: 52,
       code: "FPUBLL2DP/AY",
       campus: "AY",
       mainGroup: "C",
@@ -2684,16 +2716,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2702,11 +2734,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 52 | COURSE CODE: FPUBLL3ED/AY
+    // SOURCE SPREADSHEET ROW 53 | COURSE CODE: FPUBLL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Entry to Uniformed Services (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 52,
+      sourceRow: 53,
       code: "FPUBLL3ED/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2716,16 +2748,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "E1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "E2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "E5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "E1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "E2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "E1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "E1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "E5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "E1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "E1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2734,11 +2766,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 53 | COURSE CODE: FPSSPL1DP/AY
+    // SOURCE SPREADSHEET ROW 54 | COURSE CODE: FPSSPL1DP/AY
     // COURSE NAME: Level 1 Study Programme: Careers in Public Services & Sport
     // ------------------------------------------------------------------------
     {
-      sourceRow: 53,
+      sourceRow: 54,
       code: "FPSSPL1DP/AY",
       campus: "AY",
       mainGroup: "D",
@@ -2748,16 +2780,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "D1" is not allocatable; keep null unless the official cell reopens.
-        plus: "D3", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "D5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "D1"). Keep null unless the official cell reopens.
+        plus: "D3", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Visible source text "D1" is not allocatable; keep null unless the official cell reopens.
-        plus: "D3", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "D1"). Keep null unless the official cell reopens.
+        plus: "D3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -2766,11 +2798,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 54 | COURSE CODE: FSPORL3ED/AY
+    // SOURCE SPREADSHEET ROW 55 | COURSE CODE: FSPORL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Sport (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 54,
+      sourceRow: 55,
       code: "FSPORL3ED/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2780,16 +2812,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "E1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "E1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "E5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "E1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "E1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "E1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "E1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "E5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "E1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "E1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2798,11 +2830,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 55 | COURSE CODE: FSPORL2DP/AY
+    // SOURCE SPREADSHEET ROW 56 | COURSE CODE: FSPORL2DP/AY
     // COURSE NAME: Level 2 Study Programme: Sport
     // ------------------------------------------------------------------------
     {
-      sourceRow: 55,
+      sourceRow: 56,
       code: "FSPORL2DP/AY",
       campus: "AY",
       mainGroup: "C",
@@ -2812,16 +2844,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2830,11 +2862,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 56 | COURSE CODE: FSPPAL3DP/AY
+    // SOURCE SPREADSHEET ROW 57 | COURSE CODE: FSPPAL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Sport and Physical Activity (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 56,
+      sourceRow: 57,
       code: "FSPPAL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2844,16 +2876,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "A2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "A5", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "A2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "A2", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "A5", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "A2", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "A5", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2862,11 +2894,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 57 | COURSE CODE: FDENTL2CT/AY/A
+    // SOURCE SPREADSHEET ROW 58 | COURSE CODE: FDENTL2CT/AY/A
     // COURSE NAME: Level 2 Study Programme - Working in Dentistry - Principles of Customer Service
     // ------------------------------------------------------------------------
     {
-      sourceRow: 57,
+      sourceRow: 58,
       code: "FDENTL2CT/AY/A",
       campus: "AY",
       mainGroup: "C",
@@ -2876,16 +2908,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "C2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "C2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "C5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "C2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "C2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Need Grade 4 in English",
@@ -2894,11 +2926,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 58 | COURSE CODE: FCONSL2DP/AY/B
+    // SOURCE SPREADSHEET ROW 59 | COURSE CODE: FCONSL2DP/AY/B
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 58,
+      sourceRow: 59,
       code: "FCONSL2DP/AY/B",
       campus: "AY",
       mainGroup: "E",
@@ -2908,16 +2940,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2926,11 +2958,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 59 | COURSE CODE: FHEA2L3ED/AY
+    // SOURCE SPREADSHEET ROW 60 | COURSE CODE: FHEA2L3ED/AY
     // COURSE NAME: Level 3 Extended Diploma in Health And Social Care (Second Year)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 59,
+      sourceRow: 60,
       code: "FHEA2L3ED/AY",
       campus: "AY",
       mainGroup: "n/a",
@@ -2940,16 +2972,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2958,11 +2990,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 60 | COURSE CODE: FSOCAL3DP/AY
+    // SOURCE SPREADSHEET ROW 61 | COURSE CODE: FSOCAL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Technical Occupational Entry in Social Care (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 60,
+      sourceRow: 61,
       code: "FSOCAL3DP/AY",
       campus: "AY",
       mainGroup: "G",
@@ -2972,16 +3004,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "G2", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "G2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "G2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "G2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "G1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "G1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "G1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -2990,11 +3022,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 61 | COURSE CODE: FCONSL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 62 | COURSE CODE: FCONSL2DP/AY/A
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 61,
+      sourceRow: 62,
       code: "FCONSL2DP/AY/A",
       campus: "AY",
       mainGroup: "H",
@@ -3004,16 +3036,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "H3" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "H3" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "H3" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "H3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3022,11 +3054,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 62 | COURSE CODE: FCONSL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 63 | COURSE CODE: FCONSL1DP/AY/B
     // COURSE NAME: Level 1 Diploma in Construction - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 62,
+      sourceRow: 63,
       code: "FCONSL1DP/AY/B",
       campus: "AY",
       mainGroup: "A",
@@ -3036,16 +3068,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "A1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "A1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "A5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -3054,11 +3086,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 63 | COURSE CODE: FHSCCL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 64 | COURSE CODE: FHSCCL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Health and Social Care - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 63,
+      sourceRow: 64,
       code: "FHSCCL1DP/AY/B",
       campus: "AY",
       mainGroup: "B",
@@ -3068,16 +3100,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "B2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "B4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "B3", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "B4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "B3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -3086,11 +3118,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 64 | COURSE CODE: FMOTOL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 65 | COURSE CODE: FMOTOL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 64,
+      sourceRow: 65,
       code: "FMOTOL1DP/AY/B",
       campus: "AY",
       mainGroup: "G",
@@ -3100,16 +3132,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3118,11 +3150,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 65 | COURSE CODE: FMOTOL1DP/AY/C
+    // SOURCE SPREADSHEET ROW 66 | COURSE CODE: FMOTOL1DP/AY/C
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 65,
+      sourceRow: 66,
       code: "FMOTOL1DP/AY/C",
       campus: "AY",
       mainGroup: "B",
@@ -3132,16 +3164,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "B4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "B4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3150,11 +3182,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 66 | COURSE CODE: FMOTOL1DP/AY/D
+    // SOURCE SPREADSHEET ROW 67 | COURSE CODE: FMOTOL1DP/AY/D
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 66,
+      sourceRow: 67,
       code: "FMOTOL1DP/AY/D",
       campus: "AY",
       mainGroup: "B",
@@ -3164,16 +3196,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "B5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "B5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3182,11 +3214,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 67 | COURSE CODE: FARDEL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 68 | COURSE CODE: FARDEL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Art, Design and Media - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 67,
+      sourceRow: 68,
       code: "FARDEL1DP/AY/B",
       campus: "AY",
       mainGroup: "D",
@@ -3196,16 +3228,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "D1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "D4", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "D5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "D1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "D4", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "D1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "D3", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "D1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "D3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -3214,11 +3246,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 68 | COURSE CODE: FCONSL1DP/AY/C
+    // SOURCE SPREADSHEET ROW 69 | COURSE CODE: FCONSL1DP/AY/C
     // COURSE NAME: Level 1 Diploma in Construction - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 68,
+      sourceRow: 69,
       code: "FCONSL1DP/AY/C",
       campus: "AY",
       mainGroup: "E",
@@ -3228,16 +3260,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "E2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "E4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "E2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "E2", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "E4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "E2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -3246,11 +3278,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 69 | COURSE CODE: FCONSL1DP/AY/D
+    // SOURCE SPREADSHEET ROW 70 | COURSE CODE: FCONSL1DP/AY/D
     // COURSE NAME: Level 1 Diploma in Construction - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 69,
+      sourceRow: 70,
       code: "FCONSL1DP/AY/D",
       campus: "AY",
       mainGroup: "E",
@@ -3260,16 +3292,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "E3", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "E4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "E3", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: "E3", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "E4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: "E3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -3278,11 +3310,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 70 | COURSE CODE: FCONSL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 71 | COURSE CODE: FCONSL2DP/AY/A
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 70,
+      sourceRow: 71,
       code: "FCONSL2DP/AY/A",
       campus: "AY",
       mainGroup: "H",
@@ -3292,16 +3324,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "H5" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3310,11 +3342,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 71 | COURSE CODE: FPLUML1DP/AY/B
+    // SOURCE SPREADSHEET ROW 72 | COURSE CODE: FPLUML1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 71,
+      sourceRow: 72,
       code: "FPLUML1DP/AY/B",
       campus: "AY",
       mainGroup: "E",
@@ -3324,16 +3356,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "E4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3342,11 +3374,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 72 | COURSE CODE: FCONSL1DP/AY/E
+    // SOURCE SPREADSHEET ROW 73 | COURSE CODE: FCONSL1DP/AY/E
     // COURSE NAME: Level 1 Diploma in Construction - Group E
     // ------------------------------------------------------------------------
     {
-      sourceRow: 72,
+      sourceRow: 73,
       code: "FCONSL1DP/AY/E",
       campus: "AY",
       mainGroup: "F",
@@ -3356,16 +3388,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "F1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "F1", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "F4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "F1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "F1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "F4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "F1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "F1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "F4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "F1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "F1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "F4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -3374,11 +3406,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 73 | COURSE CODE: FMOTOL2DP/AY/B
+    // SOURCE SPREADSHEET ROW 74 | COURSE CODE: FMOTOL2DP/AY/B
     // COURSE NAME: Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 73,
+      sourceRow: 74,
       code: "FMOTOL2DP/AY/B",
       campus: "AY",
       mainGroup: null,
@@ -3388,16 +3420,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
       },
 
       entry: "Need both M&E at grade 4",
@@ -3406,11 +3438,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 74 | COURSE CODE: FPLUML1DP/AY/C
+    // SOURCE SPREADSHEET ROW 75 | COURSE CODE: FPLUML1DP/AY/C
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 74,
+      sourceRow: 75,
       code: "FPLUML1DP/AY/C",
       campus: "AY",
       mainGroup: "G",
@@ -3420,16 +3452,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3438,11 +3470,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 75 | COURSE CODE: FPLUML1DP/AY/D
+    // SOURCE SPREADSHEET ROW 76 | COURSE CODE: FPLUML1DP/AY/D
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 75,
+      sourceRow: 76,
       code: "FPLUML1DP/AY/D",
       campus: "AY",
       mainGroup: "G",
@@ -3452,16 +3484,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest EFG. Keep null unless the official cell reopens.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3470,11 +3502,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 76 | COURSE CODE: FBEAUL3DP/AY
+    // SOURCE SPREADSHEET ROW 77 | COURSE CODE: FBEAUL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Beauty Therapy
     // ------------------------------------------------------------------------
     {
-      sourceRow: 76,
+      sourceRow: 77,
       code: "FBEAUL3DP/AY",
       campus: "AY",
       mainGroup: "G",
@@ -3484,19 +3516,51 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: "H1", // MATHS — Functional Skills group from the latest EFG. Change only this MATHS value if the official group moves.
-        plus: "H2", // MATHS — GCSE Plus group from the latest EFG. Change only this MATHS value if the official group moves.
-        resit: "H4" // MATHS — GCSE Resit group from the latest EFG. Change only this MATHS value if the official group moves.
+        fs: "H1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "H2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "H4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "H1", // ENGLISH — Functional Skills group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest EFG. Change only this ENGLISH value if the official group moves.
-        resit: "H4" // ENGLISH — GCSE Resit group from the latest EFG. Change only this ENGLISH value if the official group moves.
+        fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
+      fsRestrictedToAccelerate: false,
+      specialAccelerateD: false
+    },
+
+    // ------------------------------------------------------------------------
+    // SOURCE SPREADSHEET ROW 78 | COURSE CODE: FCEN2L3TE/AY
+    // COURSE NAME: T-Level Civil Enginering
+    // ------------------------------------------------------------------------
+    {
+      sourceRow: 78,
+      code: "FCEN2L3TE/AY",
+      campus: "AY",
+      mainGroup: "B",
+      faculty: "H - Creative Enterprises",
+      area: null,
+      name: "T-Level Civil Enginering",
+
+      // MATHS GROUPS ONLY — these three lines control Maths allocations.
+      maths: {
+        fs: "D1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "D4", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+      },
+
+      // ENGLISH GROUPS ONLY — edit these separately from Maths.
+      english: {
+        fs: "D1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "D3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+      },
+
+      entry: "***THIS IS FOR STUDENTS THAT HAVE PASSED LIT BUT WANT TO IMPROVE THIER LANG SCORE. THE LANG SCORE MUST BE A 1, 2 OR 3***",
       fsRestrictedToAccelerate: false,
       specialAccelerateD: false
     }
@@ -3522,6 +3586,7 @@
   function parseEntryRule(text){
     const t=normalise(text);
     if(/special instruction/.test(t)&&/g3/.test(t))return{type:'accelerateD',description:'Accelerate Group D special one-subject GCSE option'};
+    if(/passed lit/.test(t)&&/improve/.test(t)&&/lang score/.test(t)&&/1 2 or 3/.test(t))return{type:'litPassLangImprove',description:'English Literature pass with English Language grade 1, 2 or 3 and a voluntary Language-improvement request'};
     if(/grade 3 in maths any grade in english/.test(t))return{type:'subjectAtLeast',subject:'maths',threshold:3,description:'Maths at grade 3 or above; any English grade accepted'};
     if(/grade 4 in either maths and or english/.test(t))return{type:'anyAtLeast',threshold:4,description:'At least one of Maths or English at grade 4 or above'};
     if(/grade 3 in maths and or english/.test(t))return{type:'anyAtLeast',threshold:3,description:'At least one of Maths or English at grade 3 or above'};
@@ -3743,6 +3808,11 @@
     else if(rule.type==='anyAtLeast'){const ms=m(rule.threshold),es=e(rule.threshold);status=(ms===true||es===true)?true:(ms===null||es===null?null:false);}
     else if(rule.type==='bothAtLeast'){const ms=m(rule.threshold),es=e(rule.threshold);status=(ms===false||es===false)?false:(ms===true&&es===true?true:null);}
     else if(rule.type==='subjectAtLeast'){status=rule.subject==='maths'?m(rule.threshold):e(rule.threshold);}
+    else if(rule.type==='litPassLangImprove'){
+      const literature=rawGcseStatus($('englishLit').value),language=rawGcseStatus($('englishLang').value);
+      if(literature.unknown||language.unknown)status=null;
+      else status=literature.value>=4&&language.value>=1&&language.value<=3&&$('optionalEnglish').value==='yes';
+    }
     else if(rule.type==='bothLow'){const literalLow=s=>s.candidates.some(c=>c.source==='gcse'&&Number.isFinite(c.value)&&c.value<=rule.maximum);if(maths.entryValue>rule.maximum||english.entryValue>rule.maximum)status=false;else if(maths.hasUnknown||english.hasUnknown)status=null;else if(literalLow(maths)&&literalLow(english))status=true;else status=null;}
     const baseStatus=status,inclusive=inclusiveAssessment(course);let construction=null;
     if(course.isLevelOne&&course.isConstruction){
@@ -3820,7 +3890,7 @@
   function populateQualificationOptions(){const subject=$('converterSubject').value,options=subject==='literature'?QUALIFICATION_OPTIONS.literature:QUALIFICATION_OPTIONS.standard,previous=$('converterQualification').value;$('converterQualification').innerHTML=options.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join('');if(options.some(([v])=>v===previous))$('converterQualification').value=previous;populateConverterResults();}
   function populateConverterResults(){const q=$('converterQualification').value;let options=[];if(q==='gcse')options=[['U','U'],['0','0'],['1','1'],['2','2'],['3','3'],['4','4'],['5','5'],['6','6'],['7','7'],['8','8'],['9','9'],['missing','Result missing / not verified']];else if(q==='functional')options=[['notAchieved','Attempted but not achieved'],['fs1','Functional Skills Level 1'],['fs2','Functional Skills Level 2'],['missing','Result missing / not verified']];else if(q==='entry')options=[['entry1','Entry Level 1'],['entry2','Entry Level 2'],['entry3','Entry Level 3']];else if(q==='noGrade')options=[['none','No qualification / no grade']];else if(q==='otherL1')options=[['otherL1','Other Level 1 qualification']];else options=[['other','Other / overseas / uncertain']];$('converterResult').innerHTML=options.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join('');}
   function converterCandidate(){const subject=$('converterSubject').value,q=$('converterQualification').value,result=$('converterResult').value,label=subject==='maths'?'Maths':subject==='english'?'English Language':'English Literature';if(q==='gcse')return routeFromGcse(result,`GCSE ${label}`);if(['functional','entry','otherL1'].includes(q))return routeFromAlt(result,label);if(q==='noGrade')return{value:0,route:'fs',label:`${label}: no qualification/no grade`,source:'none',priority:0,uncertain:false,equivalent:'No grade / low prior attainment'};return{value:null,route:'manual',label:`${label}: other/non-comparable qualification`,source:'manual',priority:0,uncertain:true,equivalent:'Manual equivalence required'};}
-  function converterEntryImpact(course,subject,candidate){const rule=course.entryRule;if(!Number.isFinite(candidate.value))return'Cannot assess entry impact until equivalence is confirmed.';const v=candidate.value,key=subject==='maths'?'Maths':'English';if(rule.type==='anyAtLeast')return v>=rule.threshold?`${key} alone meets the “either subject” threshold.`:`${key} does not meet it alone; the other subject may still satisfy it.`;if(rule.type==='bothAtLeast')return v>=rule.threshold?`${key} meets its part; the other subject must also meet the threshold.`:`${key} does not meet its required threshold.`;if(rule.type==='subjectAtLeast'){if((rule.subject==='maths'&&subject!=='maths')||(rule.subject==='english'&&subject==='maths'))return`This is not the subject named in the threshold; check ${rule.subject}.`;return v>=rule.threshold?`${key} meets the course-specific threshold.`:`${key} does not meet the course-specific threshold.`;}if(rule.type==='bothLow')return v<=rule.maximum?`${key} is within the stated low band; the other subject must also be within it.`:`${key} is above the stated maximum.`;return'Use the full recommendation for the entry decision.';}
+  function converterEntryImpact(course,subject,candidate){const rule=course.entryRule;if(!Number.isFinite(candidate.value))return'Cannot assess entry impact until equivalence is confirmed.';const v=candidate.value,key=subject==='maths'?'Maths':'English';if(rule.type==='anyAtLeast')return v>=rule.threshold?`${key} alone meets the “either subject” threshold.`:`${key} does not meet it alone; the other subject may still satisfy it.`;if(rule.type==='bothAtLeast')return v>=rule.threshold?`${key} meets its part; the other subject must also meet the threshold.`:`${key} does not meet its required threshold.`;if(rule.type==='subjectAtLeast'){if((rule.subject==='maths'&&subject!=='maths')||(rule.subject==='english'&&subject==='maths'))return`This is not the subject named in the threshold; check ${rule.subject}.`;return v>=rule.threshold?`${key} meets the course-specific threshold.`:`${key} does not meet the course-specific threshold.`;}if(rule.type==='bothLow')return v<=rule.maximum?`${key} is within the stated low band; the other subject must also be within it.`:`${key} is above the stated maximum.`;if(rule.type==='litPassLangImprove'){if(subject==='maths')return'Maths does not determine this special English Language-improvement rule.';if(subject==='literature')return v>=4?'Literature meets the grade-4+ pass condition; English Language must be grade 1, 2 or 3 and requested voluntarily.':'Literature does not meet the required grade-4+ pass condition.';return v>=1&&v<=3?'English Language is within the specified grade 1–3 improvement band; Literature must also be grade 4+ and the learner must request Language voluntarily.':'English Language is outside the specified grade 1–3 improvement band.';}return'Use the full recommendation for the entry decision.';}
   function renderConverterSuggestions(){const results=searchYoung($('converterCourseSearch').value);$('converterCourseSuggestions').innerHTML=results.map(course=>`<li role="option"><button type="button" class="suggestion-btn" data-converter-index="${COURSES.indexOf(course)}">${youngSuggestionLabel(course)}</button></li>`).join('')||'<li class="suggestion-empty">No matching course.</li>';$('converterCourseSuggestions').hidden=false;$('converterCourseSearch').setAttribute('aria-expanded','true');}
   function selectConverterCourse(course){state.converterCourse=course;$('converterCourseSearch').value=`${course.code||'Code not supplied'} — ${course.name}`;$('converterCourseSuggestions').hidden=true;$('converterCourseSearch').setAttribute('aria-expanded','false');$('converterCourseSelected').innerHTML=`<strong>${esc(course.code||'CODE NOT SUPPLIED')}</strong><br>${esc(course.name)}<br><span class="small">${esc(course.entry)}</span>`;}
   function runConverter(){
@@ -3876,8 +3946,8 @@
     COURSES.forEach((course,index)=>{
       const rowNumber=index+6;
       const sourceRow=Number(course.sourceRow)||rowNumber;
-      const isInclusiveRow=sourceRow>=37&&sourceRow<=42;
-      const rowHeight=sourceRow===40?45:(sourceRow===8||sourceRow===11?25.5:15);
+      const isInclusiveRow=/Foundation Learning & ESOL/i.test(course.faculty||'')||/^(FACCEL|FPAPR|FPASE)/i.test(course.code||'');
+      const rowHeight=sourceRow===40?58:(sourceRow===78?43.5:(sourceRow===8||sourceRow===11?16.5:(sourceRow===13||sourceRow===16?15.75:15)));
       const values=[
         course.code??'',course.campus??'',course.mainGroup??'',course.faculty??'',course.area??'',course.name??'',
         course.maths?.fs??'',course.maths?.plus??'',course.maths?.resit??'',
@@ -3892,7 +3962,8 @@
         else if(isInclusiveRow)styles.push(position===0?26:(position===1?27:28));
         else styles.push(position===0?17:(position===1?18:19));
       });
-      styles.push(sourceRow===33||sourceRow===40?30:(isInclusiveRow?29:20));
+      const orangeEntry=/FS group for Acc learners only|^\*{3}|Extra group added/i.test(course.entry||'');
+      styles.push(orangeEntry?30:(isInclusiveRow?29:20));
       const cells=columns.map((column,columnIndex)=>xlsxInlineCell(`${column}${rowNumber}`,styles[columnIndex],values[columnIndex])).join('');
       rows.push(`<row r="${rowNumber}" ht="${rowHeight}" customHeight="1">${cells}</row>`);
     });
@@ -3905,13 +3976,10 @@
   <sheetViews><sheetView workbookViewId="0"/></sheetViews>
   <sheetFormatPr defaultRowHeight="15"/>
   <cols>
-    <col min="1" max="1" width="16.2" customWidth="1"/><col min="2" max="2" width="7.5" customWidth="1"/>
-    <col min="3" max="3" width="9.5" customWidth="1"/><col min="4" max="4" width="30.5" customWidth="1"/>
-    <col min="5" max="5" width="23.5" customWidth="1"/><col min="6" max="6" width="69" customWidth="1"/>
-    <col min="7" max="7" width="4" customWidth="1"/><col min="8" max="8" width="5.5" customWidth="1"/>
-    <col min="9" max="9" width="6.2" customWidth="1"/><col min="10" max="10" width="4" customWidth="1"/>
-    <col min="11" max="11" width="5.5" customWidth="1"/><col min="12" max="12" width="6.2" customWidth="1"/>
-    <col min="13" max="13" width="61" customWidth="1"/>
+    <col min="1" max="1" width="22.7265625" customWidth="1"/><col min="2" max="2" width="11.26953125" customWidth="1"/>
+    <col min="3" max="3" width="13.81640625" customWidth="1"/><col min="4" max="5" width="25.1796875" customWidth="1"/>
+    <col min="6" max="6" width="82" customWidth="1"/><col min="7" max="12" width="8.43" customWidth="1"/>
+    <col min="13" max="13" width="45.1796875" customWidth="1"/>
   </cols>
   <sheetData>${rows.join('')}</sheetData>
   <mergeCells count="5"><mergeCell ref="G3:I3"/><mergeCell ref="J3:L3"/><mergeCell ref="M3:M4"/><mergeCell ref="G4:I4"/><mergeCell ref="J4:L4"/></mergeCells>
