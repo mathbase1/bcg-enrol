@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d566f">
   <meta name="description" content="Mobile-first 2026/27 enrolment decision-support app for 16–19, adult and home-schooled learners.">
-  <title>Enrolment Assistant 2026/27 — v12.0</title>
+  <title>Enrolment Assistant 2026/27 — v13.0</title>
   <style>
     :root {
       color-scheme: light;
@@ -871,7 +871,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="header-copy">
-          <p class="eyebrow">Multi-route · 2026/27 · Version 12.0</p>
+          <p class="eyebrow">Multi-route · 2026/27 · Version 13.0</p>
           <h1>Enrolment Assistant</h1>
           <p class="header-sub">Choose the learner route first, then move through Learner, Course, Details and Action. The app uses the latest attached 16–19, adult and home-school information without confirmation tick boxes.</p>
         </div>
@@ -1191,10 +1191,12 @@
      ============================================================================
 
      SOURCE OF TRUTH FOR THIS BUILD
-     - 16 19 update file(1).xlsx
-     - Worksheet: AY
+     - 16 - 19 learners truth(2).ods
+     - Worksheet: Sheet1
      - Imported course rows: 6 to 78 inclusive (73 courses)
      - Blacked-out Maths/English cells: 162
+     - 15 blacked-out cells contain source text. They stay unavailable in the app,
+       but that text is retained separately so the Excel download matches the truth table.
 
      THIS IS THE SECTION TO EDIT WHEN A MATHS OR ENGLISH GROUP FILLS UP OR MOVES.
 
@@ -1221,7 +1223,10 @@
 
      BLACKED-OUT / UNAVAILABLE CELLS
      - null means the latest source spreadsheet cell is blacked out and unavailable.
-     - A black cell may still contain visible text in Excel; that text must NOT be allocated.
+     - A black cell may still contain source text in the truth spreadsheet; that text must
+       NOT be copied into maths/english allocation fields because it is not available.
+     - The separate TRUTH_BLACK_CELL_TEXT map after COURSES preserves that black-cell text
+       only for the Excel download. It never changes app allocations or recommendations.
      - To open a route later, replace null with the new quoted group, e.g. "A2".
      - To close a route, replace the quoted group with null.
 
@@ -3566,6 +3571,45 @@
     }
 
   ];
+
+  /* ============================================================================
+     TRUTH SPREADSHEET TEXT INSIDE BLACKED-OUT CELLS — EXCEL EXPORT ONLY
+     ----------------------------------------------------------------------------
+     IMPORTANT:
+     - Do NOT use this map to open a Maths or English route.
+     - The real app allocation remains null in COURSES, so these cells stay unavailable.
+     - This map exists only because the truth spreadsheet contains text inside 15 black cells.
+     - Keys are source spreadsheet row numbers; subject and route are labelled explicitly.
+     ============================================================================ */
+  const TRUTH_BLACK_CELL_TEXT = Object.freeze({
+    19: Object.freeze({
+      maths: Object.freeze({ fs: "G1" }),   // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({ fs: "G1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    }),
+    20: Object.freeze({
+      english: Object.freeze({ fs: "A1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    }),
+    22: Object.freeze({
+      maths: Object.freeze({ fs: "A2" }),   // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({ fs: "A2" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    }),
+    23: Object.freeze({
+      maths: Object.freeze({ fs: "A2" }),   // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({ fs: "A2" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    }),
+    26: Object.freeze({
+      maths: Object.freeze({ fs: "C2", plus: "C3" }),     // BLACK CELLS — MATHS FS and Plus display text only.
+      english: Object.freeze({ fs: "C2", plus: "C3" })   // BLACK CELLS — ENGLISH FS and Plus display text only.
+    }),
+    28: Object.freeze({
+      maths: Object.freeze({ fs: "G1", plus: "G3" })      // BLACK CELLS — MATHS FS and Plus display text only.
+    }),
+    54: Object.freeze({
+      maths: Object.freeze({ fs: "D1" }),   // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({ fs: "D1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    })
+  });
+
   /* ============================================================================
      END OF EDITABLE 16–19 COURSE DATA
      Everything below this marker is application logic. Group-name updates should
@@ -3912,6 +3956,7 @@
      - merged Maths and English group headings;
      - the same 13 columns and column order;
      - black fill for every unavailable/null group cell;
+     - the original source text retained inside the 15 black cells where truth contains it;
      - the Inclusive Practice peach rows and special orange instruction cells.
 
      This is a self-contained XLSX writer. It does not use an external website,
@@ -3923,6 +3968,11 @@
   function xlsxInlineCell(reference,styleId,value){
     if(value===null||value===undefined||value==='')return `<c r="${reference}" s="${styleId}"/>`;
     return `<c r="${reference}" s="${styleId}" t="inlineStr"><is><t xml:space="preserve">${xlsxEscapeXml(value)}</t></is></c>`;
+  }
+  function xlsxTruthGroupValue(course,subject,route){
+    const availableValue=course?.[subject]?.[route];
+    if(availableValue!==null&&availableValue!==undefined&&availableValue!=='')return availableValue;
+    return TRUTH_BLACK_CELL_TEXT[course?.sourceRow]?.[subject]?.[route]??'';
   }
   function xlsxCurrent16to19SheetXml(){
     const columns=['A','B','C','D','E','F','G','H','I','J','K','L','M'];
@@ -3950,8 +4000,8 @@
       const rowHeight=sourceRow===40?58:(sourceRow===78?43.5:(sourceRow===8||sourceRow===11?16.5:(sourceRow===13||sourceRow===16?15.75:15)));
       const values=[
         course.code??'',course.campus??'',course.mainGroup??'',course.faculty??'',course.area??'',course.name??'',
-        course.maths?.fs??'',course.maths?.plus??'',course.maths?.resit??'',
-        course.english?.fs??'',course.english?.plus??'',course.english?.resit??'',course.entry??''
+        xlsxTruthGroupValue(course,'maths','fs'),xlsxTruthGroupValue(course,'maths','plus'),xlsxTruthGroupValue(course,'maths','resit'),
+        xlsxTruthGroupValue(course,'english','fs'),xlsxTruthGroupValue(course,'english','plus'),xlsxTruthGroupValue(course,'english','resit'),course.entry??''
       ];
       const groupValues=[course.maths?.fs,course.maths?.plus,course.maths?.resit,course.english?.fs,course.english?.plus,course.english?.resit];
       const styles=[];
