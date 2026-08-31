@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d566f">
   <meta name="description" content="Mobile-first 2026/27 enrolment decision-support app for 16–19, adult and home-schooled learners.">
-  <title>Enrolment Assistant 2026/27 — v13.0</title>
+  <title>Enrolment Assistant 2026/27 — v14.0</title>
   <style>
     :root {
       color-scheme: light;
@@ -871,7 +871,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="header-copy">
-          <p class="eyebrow">Multi-route · 2026/27 · Version 13.0</p>
+          <p class="eyebrow">Multi-route · 2026/27 · Version 14.0</p>
           <h1>Enrolment Assistant</h1>
           <p class="header-sub">Choose the learner route first, then move through Learner, Course, Details and Action. The app uses the latest attached 16–19, adult and home-school information without confirmation tick boxes.</p>
         </div>
@@ -883,10 +883,10 @@
         </div>
       </div>
       <div class="header-badges">
-        <span class="header-badge">73 latest 16–19 rows</span>
+        <span class="header-badge">75 latest 16–19 rows</span>
         <span class="header-badge">21 adult offerings with codes</span>
         <span class="header-badge">8 home-school sessions</span>
-        <span class="header-badge">162 black cells blocked</span>
+        <span class="header-badge">144 black cells blocked</span>
         <span class="header-badge">Runs on this device</span>
       </div>
     </div>
@@ -1191,12 +1191,12 @@
      ============================================================================
 
      SOURCE OF TRUTH FOR THIS BUILD
-     - 16 - 19 learners truth(2).ods
-     - Worksheet: Sheet1
-     - Imported course rows: 6 to 78 inclusive (73 courses)
-     - Blacked-out Maths/English cells: 162
+     - 16 - 19 update(2).xlsx
+     - Worksheet: AY
+     - Imported course rows: 6 to 80 inclusive (75 courses)
+     - Blacked-out Maths/English cells: 144
      - 15 blacked-out cells contain source text. They stay unavailable in the app,
-       but that text is retained separately so the Excel download matches the truth table.
+       but that text is retained separately so the Excel download matches the source table.
 
      THIS IS THE SECTION TO EDIT WHEN A MATHS OR ENGLISH GROUP FILLS UP OR MOVES.
 
@@ -1223,7 +1223,7 @@
 
      BLACKED-OUT / UNAVAILABLE CELLS
      - null means the latest source spreadsheet cell is blacked out and unavailable.
-     - A black cell may still contain source text in the truth spreadsheet; that text must
+     - A black cell may still contain source text in the spreadsheet; that text must
        NOT be copied into maths/english allocation fields because it is not available.
      - The separate TRUTH_BLACK_CELL_TEXT map after COURSES preserves that black-cell text
        only for the Excel download. It never changes app allocations or recommendations.
@@ -1251,7 +1251,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1283,7 +1283,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1315,7 +1315,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1537,9 +1537,9 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1569,9 +1569,9 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1665,14 +1665,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "H2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "H2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1697,14 +1697,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A1"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1729,9 +1729,9 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -1761,14 +1761,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A5", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1793,14 +1793,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "A2"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A5", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1825,14 +1825,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "B3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1889,15 +1889,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "C2"). Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "C3"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "C2"). Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "C3"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -1921,14 +1921,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -1953,8 +1953,8 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "G1"). Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid (visible source text: "G3"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
@@ -1985,15 +1985,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2017,16 +2017,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2049,16 +2049,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2067,12 +2067,12 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 32 | COURSE CODE: FCARPL2DP/AY
+    // SOURCE SPREADSHEET ROW 32 | COURSE CODE: FCARPL2DP/AY/A
     // COURSE NAME: Level 2 Study Programme: Carpentry & Joinery
     // ------------------------------------------------------------------------
     {
       sourceRow: 32,
-      code: "FCARPL2DP/AY",
+      code: "FCARPL2DP/AY/A",
       campus: "AY",
       mainGroup: "F",
       faculty: "J - Construction & Technology",
@@ -2081,16 +2081,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "F1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "F2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "F3" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "F1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "F3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "F4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2099,11 +2099,43 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 33 | COURSE CODE: FCONSL1DP/AY/A
-    // COURSE NAME: Level 1 Diploma in Construction - Group A
+    // SOURCE SPREADSHEET ROW 33 | COURSE CODE: FCARPL2DP/AY/B
+    // COURSE NAME: Level 2 Study Programme: Carpentry & Joinery
     // ------------------------------------------------------------------------
     {
       sourceRow: 33,
+      code: "FCARPL2DP/AY/B",
+      campus: "AY",
+      mainGroup: "B",
+      faculty: "J - Construction & Technology",
+      area: "CONT-AY",
+      name: "Level 2 Study Programme: Carpentry & Joinery",
+
+      // MATHS GROUPS ONLY — these three lines control Maths allocations.
+      maths: {
+        fs: "B2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+      },
+
+      // ENGLISH GROUPS ONLY — edit these separately from Maths.
+      english: {
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+      },
+
+      entry: "Must have both M&E at grade 4",
+      fsRestrictedToAccelerate: false,
+      specialAccelerateD: false
+    },
+
+    // ------------------------------------------------------------------------
+    // SOURCE SPREADSHEET ROW 34 | COURSE CODE: FCONSL1DP/AY/A
+    // COURSE NAME: Level 1 Diploma in Construction - Group A
+    // ------------------------------------------------------------------------
+    {
+      sourceRow: 34,
       code: "FCONSL1DP/AY/A",
       campus: "AY",
       mainGroup: "A",
@@ -2115,7 +2147,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -2131,12 +2163,12 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 34 | COURSE CODE: FBRICL2DP/AY
+    // SOURCE SPREADSHEET ROW 35 | COURSE CODE: FBRICL2DP/AY/A
     // COURSE NAME: Level 2 Study Programme: Bricklaying
     // ------------------------------------------------------------------------
     {
-      sourceRow: 34,
-      code: "FBRICL2DP/AY",
+      sourceRow: 35,
+      code: "FBRICL2DP/AY/A",
       campus: "AY",
       mainGroup: "F",
       faculty: "J - Construction & Technology",
@@ -2145,16 +2177,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "F1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "F2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "F3" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "F1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "F3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "F4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2163,11 +2195,43 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 35 | COURSE CODE: FCARPL1DP/AY
+    // SOURCE SPREADSHEET ROW 36 | COURSE CODE: FBRICL2DP/AY/B
+    // COURSE NAME: Level 2 Study Programme: Bricklaying
+    // ------------------------------------------------------------------------
+    {
+      sourceRow: 36,
+      code: "FBRICL2DP/AY/B",
+      campus: "AY",
+      mainGroup: "E",
+      faculty: "J - Construction & Technology",
+      area: "CONT-AY",
+      name: "Level 2 Study Programme: Bricklaying",
+
+      // MATHS GROUPS ONLY — these three lines control Maths allocations.
+      maths: {
+        fs: "E1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "E1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "E5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+      },
+
+      // ENGLISH GROUPS ONLY — edit these separately from Maths.
+      english: {
+        fs: "E1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "E1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "E5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+      },
+
+      entry: "Must have both M&E at grade 4",
+      fsRestrictedToAccelerate: false,
+      specialAccelerateD: false
+    },
+
+    // ------------------------------------------------------------------------
+    // SOURCE SPREADSHEET ROW 37 | COURSE CODE: FCARPL1DP/AY
     // COURSE NAME: Level 1 Study Programme: Carpentry & Joinery
     // ------------------------------------------------------------------------
     {
-      sourceRow: 35,
+      sourceRow: 37,
       code: "FCARPL1DP/AY",
       campus: "AY",
       mainGroup: "F",
@@ -2177,15 +2241,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "F5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "F5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2195,11 +2259,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 36 | COURSE CODE: FBRICL1DP/AY
+    // SOURCE SPREADSHEET ROW 38 | COURSE CODE: FBRICL1DP/AY
     // COURSE NAME: Level 1 Study Programme: Bricklaying
     // ------------------------------------------------------------------------
     {
-      sourceRow: 36,
+      sourceRow: 38,
       code: "FBRICL1DP/AY",
       campus: "AY",
       mainGroup: "D",
@@ -2209,15 +2273,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2227,11 +2291,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 37 | COURSE CODE: FACCELXXX/AY/A
+    // SOURCE SPREADSHEET ROW 39 | COURSE CODE: FACCELXXX/AY/A
     // COURSE NAME: Accelerate - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 37,
+      sourceRow: 39,
       code: "FACCELXXX/AY/A",
       campus: "AY",
       mainGroup: "S",
@@ -2242,15 +2306,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "S", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "S", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2259,11 +2323,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 38 | COURSE CODE: FACCELXXX/AY/B
+    // SOURCE SPREADSHEET ROW 40 | COURSE CODE: FACCELXXX/AY/B
     // COURSE NAME: Accelerate - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 38,
+      sourceRow: 40,
       code: "FACCELXXX/AY/B",
       campus: "AY",
       mainGroup: "T",
@@ -2274,15 +2338,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "T", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "T", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2291,11 +2355,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 39 | COURSE CODE: FACCELXXX/AY/C
+    // SOURCE SPREADSHEET ROW 41 | COURSE CODE: FACCELXXX/AY/C
     // COURSE NAME: Accelerate - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 39,
+      sourceRow: 41,
       code: "FACCELXXX/AY/C",
       campus: "AY",
       mainGroup: "U",
@@ -2306,15 +2370,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "U", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "U", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2323,11 +2387,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 40 | COURSE CODE: FACCELXXX/AY/D
+    // SOURCE SPREADSHEET ROW 42 | COURSE CODE: FACCELXXX/AY/D
     // COURSE NAME: Accelerate - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 40,
+      sourceRow: 42,
       code: "FACCELXXX/AY/D",
       campus: "AY",
       mainGroup: "V",
@@ -2338,15 +2402,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "V", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "V", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "***SPECIAL INSTRUCTION*** This group is allowed to have a GCSE option for one of the two retakes it need. please enrol to group G3 for English and G3 for Maths",
@@ -2355,11 +2419,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 41 | COURSE CODE: FACCELXXX/AY/E
+    // SOURCE SPREADSHEET ROW 43 | COURSE CODE: FACCELXXX/AY/E
     // COURSE NAME: Accelerate - Group E
     // ------------------------------------------------------------------------
     {
-      sourceRow: 41,
+      sourceRow: 43,
       code: "FACCELXXX/AY/E",
       campus: "AY",
       mainGroup: "V",
@@ -2370,15 +2434,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "F3", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "F2", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Extra group added.",
@@ -2387,11 +2451,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 42 | COURSE CODE: FPAPRXXCT/AY
+    // SOURCE SPREADSHEET ROW 44 | COURSE CODE: FPAPRXXCT/AY
     // COURSE NAME: Pathway to Progression
     // ------------------------------------------------------------------------
     {
-      sourceRow: 42,
+      sourceRow: 44,
       code: "FPAPRXXCT/AY",
       campus: "AY",
       mainGroup: "W",
@@ -2402,15 +2466,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "W", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "W", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2419,11 +2483,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 43 | COURSE CODE: FPASEXXCT/AY
+    // SOURCE SPREADSHEET ROW 45 | COURSE CODE: FPASEXXCT/AY
     // COURSE NAME: Pathway to Supported Employment
     // ------------------------------------------------------------------------
     {
-      sourceRow: 43,
+      sourceRow: 45,
       code: "FPASEXXCT/AY",
       campus: "AY",
       mainGroup: "W",
@@ -2434,15 +2498,15 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "X", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "X", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Grade 1, 0 or U in Maths and English",
@@ -2451,11 +2515,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 44 | COURSE CODE: FGADVL3DP/AY
+    // SOURCE SPREADSHEET ROW 46 | COURSE CODE: FGADVL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Games Design (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 44,
+      sourceRow: 46,
       code: "FGADVL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2467,7 +2531,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -2483,11 +2547,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 45 | COURSE CODE: FGAMEL3DP/AY
+    // SOURCE SPREADSHEET ROW 47 | COURSE CODE: FGAMEL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Game Art (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 45,
+      sourceRow: 47,
       code: "FGAMEL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2499,7 +2563,7 @@
       maths: {
         fs: "A1", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -2515,11 +2579,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 46 | COURSE CODE: FGADVL3ED/AY
+    // SOURCE SPREADSHEET ROW 48 | COURSE CODE: FGADVL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Games Design (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 46,
+      sourceRow: 48,
       code: "FGADVL3ED/AY",
       campus: "AY",
       mainGroup: "B",
@@ -2547,11 +2611,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 47 | COURSE CODE: FGAMEL3ED/AY
+    // SOURCE SPREADSHEET ROW 49 | COURSE CODE: FGAMEL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Game Art (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 47,
+      sourceRow: 49,
       code: "FGAMEL3ED/AY",
       campus: "AY",
       mainGroup: "B",
@@ -2579,11 +2643,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 48 | COURSE CODE: FHANBL1CT/AY
+    // SOURCE SPREADSHEET ROW 50 | COURSE CODE: FHANBL1CT/AY
     // COURSE NAME: Level 1 Study Programme: Introduction to Hair & Beauty
     // ------------------------------------------------------------------------
     {
-      sourceRow: 48,
+      sourceRow: 50,
       code: "FHANBL1CT/AY",
       campus: "AY",
       mainGroup: "H",
@@ -2611,11 +2675,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 49 | COURSE CODE: FMOTOL1DP/AY/A
+    // SOURCE SPREADSHEET ROW 51 | COURSE CODE: FMOTOL1DP/AY/A
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 49,
+      sourceRow: 51,
       code: "FMOTOL1DP/AY/A",
       campus: "AY",
       mainGroup: "G",
@@ -2626,14 +2690,14 @@
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
         fs: "G2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2643,14 +2707,14 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 50 | COURSE CODE: FMOTOL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 52 | COURSE CODE: FMOTOL2DP/AY/A
     // COURSE NAME: Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 50,
+      sourceRow: 52,
       code: "FMOTOL2DP/AY/A",
       campus: "AY",
-      mainGroup: "A",
+      mainGroup: "F",
       faculty: "J - Construction & Technology",
       area: "MOTV-AY",
       name: "Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group A",
@@ -2675,11 +2739,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 51 | COURSE CODE: FPUBLL390/AY
+    // SOURCE SPREADSHEET ROW 53 | COURSE CODE: FPUBLL390/AY
     // COURSE NAME: Level 3 Study Programme: Entry to Uniformed Services (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 51,
+      sourceRow: 53,
       code: "FPUBLL390/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2707,11 +2771,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 52 | COURSE CODE: FPUBLL2DP/AY
+    // SOURCE SPREADSHEET ROW 54 | COURSE CODE: FPUBLL2DP/AY
     // COURSE NAME: Level 2 Study Programme: Entry to Uniformed Services
     // ------------------------------------------------------------------------
     {
-      sourceRow: 52,
+      sourceRow: 54,
       code: "FPUBLL2DP/AY",
       campus: "AY",
       mainGroup: "C",
@@ -2721,15 +2785,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2739,11 +2803,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 53 | COURSE CODE: FPUBLL3ED/AY
+    // SOURCE SPREADSHEET ROW 55 | COURSE CODE: FPUBLL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Entry to Uniformed Services (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 53,
+      sourceRow: 55,
       code: "FPUBLL3ED/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2771,11 +2835,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 54 | COURSE CODE: FPSSPL1DP/AY
+    // SOURCE SPREADSHEET ROW 56 | COURSE CODE: FPSSPL1DP/AY
     // COURSE NAME: Level 1 Study Programme: Careers in Public Services & Sport
     // ------------------------------------------------------------------------
     {
-      sourceRow: 54,
+      sourceRow: 56,
       code: "FPSSPL1DP/AY",
       campus: "AY",
       mainGroup: "D",
@@ -2785,14 +2849,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "D1"). Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D3", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "D5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid (visible source text: "D1"). Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -2803,11 +2867,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 55 | COURSE CODE: FSPORL3ED/AY
+    // SOURCE SPREADSHEET ROW 57 | COURSE CODE: FSPORL3ED/AY
     // COURSE NAME: Level 3 Study Programme: Sport (Extended Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 55,
+      sourceRow: 57,
       code: "FSPORL3ED/AY",
       campus: "AY",
       mainGroup: "E",
@@ -2835,11 +2899,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 56 | COURSE CODE: FSPORL2DP/AY
+    // SOURCE SPREADSHEET ROW 58 | COURSE CODE: FSPORL2DP/AY
     // COURSE NAME: Level 2 Study Programme: Sport
     // ------------------------------------------------------------------------
     {
-      sourceRow: 56,
+      sourceRow: 58,
       code: "FSPORL2DP/AY",
       campus: "AY",
       mainGroup: "C",
@@ -2849,15 +2913,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2867,11 +2931,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 57 | COURSE CODE: FSPPAL3DP/AY
+    // SOURCE SPREADSHEET ROW 59 | COURSE CODE: FSPPAL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Sport and Physical Activity (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 57,
+      sourceRow: 59,
       code: "FSPPAL3DP/AY",
       campus: "AY",
       mainGroup: "A",
@@ -2883,7 +2947,7 @@
       maths: {
         fs: "A2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
         plus: "A5", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
-        resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "A6" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
@@ -2899,11 +2963,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 58 | COURSE CODE: FDENTL2CT/AY/A
+    // SOURCE SPREADSHEET ROW 60 | COURSE CODE: FDENTL2CT/AY/A
     // COURSE NAME: Level 2 Study Programme - Working in Dentistry - Principles of Customer Service
     // ------------------------------------------------------------------------
     {
-      sourceRow: 58,
+      sourceRow: 60,
       code: "FDENTL2CT/AY/A",
       campus: "AY",
       mainGroup: "C",
@@ -2920,9 +2984,9 @@
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Need Grade 4 in English",
@@ -2931,11 +2995,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 59 | COURSE CODE: FCONSL2DP/AY/B
+    // SOURCE SPREADSHEET ROW 61 | COURSE CODE: FCONSL2DP/AY/B
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 59,
+      sourceRow: 61,
       code: "FCONSL2DP/AY/B",
       campus: "AY",
       mainGroup: "E",
@@ -2945,15 +3009,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2963,11 +3027,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 60 | COURSE CODE: FHEA2L3ED/AY
+    // SOURCE SPREADSHEET ROW 62 | COURSE CODE: FHEA2L3ED/AY
     // COURSE NAME: Level 3 Extended Diploma in Health And Social Care (Second Year)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 60,
+      sourceRow: 62,
       code: "FHEA2L3ED/AY",
       campus: "AY",
       mainGroup: "n/a",
@@ -2977,16 +3041,16 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // MATHS — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        resit: null // ENGLISH — GCSE Resit unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
       },
 
       entry: "Must have both M&E at grade 4",
@@ -2995,11 +3059,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 61 | COURSE CODE: FSOCAL3DP/AY
+    // SOURCE SPREADSHEET ROW 63 | COURSE CODE: FSOCAL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Technical Occupational Entry in Social Care (Diploma)
     // ------------------------------------------------------------------------
     {
-      sourceRow: 61,
+      sourceRow: 63,
       code: "FSOCAL3DP/AY",
       campus: "AY",
       mainGroup: "G",
@@ -3027,11 +3091,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 62 | COURSE CODE: FCONSL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 64 | COURSE CODE: FCONSL2DP/AY/A
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 62,
+      sourceRow: 64,
       code: "FCONSL2DP/AY/A",
       campus: "AY",
       mainGroup: "H",
@@ -3041,15 +3105,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "H3" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "H3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3059,11 +3123,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 63 | COURSE CODE: FCONSL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 65 | COURSE CODE: FCONSL1DP/AY/B
     // COURSE NAME: Level 1 Diploma in Construction - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 63,
+      sourceRow: 65,
       code: "FCONSL1DP/AY/B",
       campus: "AY",
       mainGroup: "A",
@@ -3073,14 +3137,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "A5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "A1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "A5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -3091,11 +3155,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 64 | COURSE CODE: FHSCCL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 66 | COURSE CODE: FHSCCL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Health and Social Care - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 64,
+      sourceRow: 66,
       code: "FHSCCL1DP/AY/B",
       campus: "AY",
       mainGroup: "B",
@@ -3105,14 +3169,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "B2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "B3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -3123,11 +3187,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 65 | COURSE CODE: FMOTOL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 67 | COURSE CODE: FMOTOL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 65,
+      sourceRow: 67,
       code: "FMOTOL1DP/AY/B",
       campus: "AY",
       mainGroup: "G",
@@ -3137,15 +3201,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3155,11 +3219,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 66 | COURSE CODE: FMOTOL1DP/AY/C
+    // SOURCE SPREADSHEET ROW 68 | COURSE CODE: FMOTOL1DP/AY/C
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 66,
+      sourceRow: 68,
       code: "FMOTOL1DP/AY/C",
       campus: "AY",
       mainGroup: "B",
@@ -3169,15 +3233,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "B4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3187,11 +3251,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 67 | COURSE CODE: FMOTOL1DP/AY/D
+    // SOURCE SPREADSHEET ROW 69 | COURSE CODE: FMOTOL1DP/AY/D
     // COURSE NAME: Level 1 Study Programme: Vehicle Maintenance - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 67,
+      sourceRow: 69,
       code: "FMOTOL1DP/AY/D",
       campus: "AY",
       mainGroup: "B",
@@ -3201,15 +3265,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "B5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3219,11 +3283,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 68 | COURSE CODE: FARDEL1DP/AY/B
+    // SOURCE SPREADSHEET ROW 70 | COURSE CODE: FARDEL1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Art, Design and Media - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 68,
+      sourceRow: 70,
       code: "FARDEL1DP/AY/B",
       campus: "AY",
       mainGroup: "D",
@@ -3251,11 +3315,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 69 | COURSE CODE: FCONSL1DP/AY/C
+    // SOURCE SPREADSHEET ROW 71 | COURSE CODE: FCONSL1DP/AY/C
     // COURSE NAME: Level 1 Diploma in Construction - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 69,
+      sourceRow: 71,
       code: "FCONSL1DP/AY/C",
       campus: "AY",
       mainGroup: "E",
@@ -3265,14 +3329,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "E2", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "E2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -3283,11 +3347,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 70 | COURSE CODE: FCONSL1DP/AY/D
+    // SOURCE SPREADSHEET ROW 72 | COURSE CODE: FCONSL1DP/AY/D
     // COURSE NAME: Level 1 Diploma in Construction - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 70,
+      sourceRow: 72,
       code: "FCONSL1DP/AY/D",
       campus: "AY",
       mainGroup: "E",
@@ -3297,14 +3361,14 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "E3", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
         resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "E3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
@@ -3315,11 +3379,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 71 | COURSE CODE: FCONSL2DP/AY/A
+    // SOURCE SPREADSHEET ROW 73 | COURSE CODE: FCONSL2DP/AY/A
     // COURSE NAME: Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group A
     // ------------------------------------------------------------------------
     {
-      sourceRow: 71,
+      sourceRow: 73,
       code: "FCONSL2DP/AY/A",
       campus: "AY",
       mainGroup: "H",
@@ -3329,15 +3393,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "H5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3347,11 +3411,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 72 | COURSE CODE: FPLUML1DP/AY/B
+    // SOURCE SPREADSHEET ROW 74 | COURSE CODE: FPLUML1DP/AY/B
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 72,
+      sourceRow: 74,
       code: "FPLUML1DP/AY/B",
       campus: "AY",
       mainGroup: "E",
@@ -3361,15 +3425,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "E4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3379,11 +3443,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 73 | COURSE CODE: FCONSL1DP/AY/E
+    // SOURCE SPREADSHEET ROW 75 | COURSE CODE: FCONSL1DP/AY/E
     // COURSE NAME: Level 1 Diploma in Construction - Group E
     // ------------------------------------------------------------------------
     {
-      sourceRow: 73,
+      sourceRow: 75,
       code: "FCONSL1DP/AY/E",
       campus: "AY",
       mainGroup: "F",
@@ -3411,30 +3475,30 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 74 | COURSE CODE: FMOTOL2DP/AY/B
+    // SOURCE SPREADSHEET ROW 76 | COURSE CODE: FMOTOL2DP/AY/B
     // COURSE NAME: Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group B
     // ------------------------------------------------------------------------
     {
-      sourceRow: 74,
+      sourceRow: 76,
       code: "FMOTOL2DP/AY/B",
       campus: "AY",
-      mainGroup: null,
+      mainGroup: "B",
       faculty: "J - Construction & Technology",
       area: "MOTV-AY",
       name: "Level 2 Study Programme: Light Vehicle Maintenance & Repair - Group B",
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // MATHS — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "B2", // MATHS — Functional Skills group from the latest grid. Change only this MATHS value if the official group moves.
+        plus: "B1", // MATHS — GCSE Plus group from the latest grid. Change only this MATHS value if the official group moves.
+        resit: "B5" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        resit: null // ENGLISH — GCSE Resit is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: "B1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "B1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "B4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Need both M&E at grade 4",
@@ -3443,11 +3507,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 75 | COURSE CODE: FPLUML1DP/AY/C
+    // SOURCE SPREADSHEET ROW 77 | COURSE CODE: FPLUML1DP/AY/C
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group C
     // ------------------------------------------------------------------------
     {
-      sourceRow: 75,
+      sourceRow: 77,
       code: "FPLUML1DP/AY/C",
       campus: "AY",
       mainGroup: "G",
@@ -3457,15 +3521,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3475,11 +3539,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 76 | COURSE CODE: FPLUML1DP/AY/D
+    // SOURCE SPREADSHEET ROW 78 | COURSE CODE: FPLUML1DP/AY/D
     // COURSE NAME: Level 1 Study Programme: Plumbing - Group D
     // ------------------------------------------------------------------------
     {
-      sourceRow: 76,
+      sourceRow: 78,
       code: "FPLUML1DP/AY/D",
       campus: "AY",
       mainGroup: "G",
@@ -3489,15 +3553,15 @@
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
       maths: {
-        fs: null, // MATHS — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // MATHS — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // MATHS — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // MATHS — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G4" // MATHS — GCSE Resit group from the latest grid. Change only this MATHS value if the official group moves.
       },
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: null, // ENGLISH — Functional Skills is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
-        plus: null, // ENGLISH — GCSE Plus is BLACKED OUT / unavailable in the latest grid. Keep null unless the official cell reopens.
+        fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -3507,11 +3571,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 77 | COURSE CODE: FBEAUL3DP/AY
+    // SOURCE SPREADSHEET ROW 79 | COURSE CODE: FBEAUL3DP/AY
     // COURSE NAME: Level 3 Study Programme: Beauty Therapy
     // ------------------------------------------------------------------------
     {
-      sourceRow: 77,
+      sourceRow: 79,
       code: "FBEAUL3DP/AY",
       campus: "AY",
       mainGroup: "G",
@@ -3539,11 +3603,11 @@
     },
 
     // ------------------------------------------------------------------------
-    // SOURCE SPREADSHEET ROW 78 | COURSE CODE: FCEN2L3TE/AY
+    // SOURCE SPREADSHEET ROW 80 | COURSE CODE: FCEN2L3TE/AY
     // COURSE NAME: T-Level Civil Enginering
     // ------------------------------------------------------------------------
     {
-      sourceRow: 78,
+      sourceRow: 80,
       code: "FCEN2L3TE/AY",
       campus: "AY",
       mainGroup: "B",
@@ -3573,40 +3637,40 @@
   ];
 
   /* ============================================================================
-     TRUTH SPREADSHEET TEXT INSIDE BLACKED-OUT CELLS — EXCEL EXPORT ONLY
+     SOURCE SPREADSHEET TEXT INSIDE BLACKED-OUT CELLS — EXCEL EXPORT ONLY
      ----------------------------------------------------------------------------
      IMPORTANT:
      - Do NOT use this map to open a Maths or English route.
      - The real app allocation remains null in COURSES, so these cells stay unavailable.
-     - This map exists only because the truth spreadsheet contains text inside 15 black cells.
+     - This map exists only because the source spreadsheet contains text inside black cells.
      - Keys are source spreadsheet row numbers; subject and route are labelled explicitly.
      ============================================================================ */
   const TRUTH_BLACK_CELL_TEXT = Object.freeze({
     19: Object.freeze({
-      maths: Object.freeze({ fs: "G1" }),   // BLACK CELL — MATHS Functional Skills display text only.
-      english: Object.freeze({ fs: "G1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+      maths: Object.freeze({fs: "G1"}),  // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({fs: "G1"}),  // BLACK CELL — ENGLISH Functional Skills display text only.
     }),
     20: Object.freeze({
-      english: Object.freeze({ fs: "A1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+      english: Object.freeze({fs: "A1"}),  // BLACK CELL — ENGLISH Functional Skills display text only.
     }),
     22: Object.freeze({
-      maths: Object.freeze({ fs: "A2" }),   // BLACK CELL — MATHS Functional Skills display text only.
-      english: Object.freeze({ fs: "A2" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+      maths: Object.freeze({fs: "A2"}),  // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({fs: "A2"}),  // BLACK CELL — ENGLISH Functional Skills display text only.
     }),
     23: Object.freeze({
-      maths: Object.freeze({ fs: "A2" }),   // BLACK CELL — MATHS Functional Skills display text only.
-      english: Object.freeze({ fs: "A2" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+      maths: Object.freeze({fs: "A2"}),  // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({fs: "A2"}),  // BLACK CELL — ENGLISH Functional Skills display text only.
     }),
     26: Object.freeze({
-      maths: Object.freeze({ fs: "C2", plus: "C3" }),     // BLACK CELLS — MATHS FS and Plus display text only.
-      english: Object.freeze({ fs: "C2", plus: "C3" })   // BLACK CELLS — ENGLISH FS and Plus display text only.
+      maths: Object.freeze({fs: "C2", plus: "C3"}),  // BLACK CELL — MATHS Functional Skills and GCSE Plus display text only.
+      english: Object.freeze({fs: "C2", plus: "C3"}),  // BLACK CELL — ENGLISH Functional Skills and GCSE Plus display text only.
     }),
     28: Object.freeze({
-      maths: Object.freeze({ fs: "G1", plus: "G3" })      // BLACK CELLS — MATHS FS and Plus display text only.
+      maths: Object.freeze({fs: "G1", plus: "G3"}),  // BLACK CELL — MATHS Functional Skills and GCSE Plus display text only.
     }),
-    54: Object.freeze({
-      maths: Object.freeze({ fs: "D1" }),   // BLACK CELL — MATHS Functional Skills display text only.
-      english: Object.freeze({ fs: "D1" })  // BLACK CELL — ENGLISH Functional Skills display text only.
+    56: Object.freeze({
+      maths: Object.freeze({fs: "D1"}),  // BLACK CELL — MATHS Functional Skills display text only.
+      english: Object.freeze({fs: "D1"}),  // BLACK CELL — ENGLISH Functional Skills display text only.
     })
   });
 
@@ -3997,7 +4061,7 @@
       const rowNumber=index+6;
       const sourceRow=Number(course.sourceRow)||rowNumber;
       const isInclusiveRow=/Foundation Learning & ESOL/i.test(course.faculty||'')||/^(FACCEL|FPAPR|FPASE)/i.test(course.code||'');
-      const rowHeight=sourceRow===40?58:(sourceRow===78?43.5:(sourceRow===8||sourceRow===11?16.5:(sourceRow===13||sourceRow===16?15.75:15)));
+      const rowHeight=sourceRow===42?58:(sourceRow===80?43.5:(sourceRow===8||sourceRow===11?16.5:(sourceRow===13||sourceRow===16?15.75:15)));
       const values=[
         course.code??'',course.campus??'',course.mainGroup??'',course.faculty??'',course.area??'',course.name??'',
         xlsxTruthGroupValue(course,'maths','fs'),xlsxTruthGroupValue(course,'maths','plus'),xlsxTruthGroupValue(course,'maths','resit'),
