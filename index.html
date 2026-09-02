@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d566f">
   <meta name="description" content="Mobile-first 2026/27 enrolment decision-support app for 16–19, adult and home-schooled learners.">
-  <title>Enrolment Assistant 2026/27 — v15.0</title>
+  <title>Enrolment Assistant 2026/27 — v16.0</title>
   <style>
     :root {
       color-scheme: light;
@@ -871,7 +871,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="header-copy">
-          <p class="eyebrow">Multi-route · 2026/27 · Version 15.0</p>
+          <p class="eyebrow">Multi-route · 2026/27 · Version 16.0</p>
           <h1>Enrolment Assistant</h1>
           <p class="header-sub">Choose the learner route first, then move through Learner, Course, Details and Action. The app uses the latest attached 16–19, adult and home-school information without confirmation tick boxes.</p>
         </div>
@@ -886,7 +886,7 @@
         <span class="header-badge">75 latest 16–19 rows</span>
         <span class="header-badge">21 adult offerings with codes</span>
         <span class="header-badge">8 home-school sessions</span>
-        <span class="header-badge">144 black cells blocked</span>
+        <span class="header-badge">143 black cells blocked</span>
         <span class="header-badge">Runs on this device</span>
       </div>
     </div>
@@ -1191,10 +1191,10 @@
      ============================================================================
 
      SOURCE OF TRUTH FOR THIS BUILD
-     - 16 - 19 update(3).xlsx
+     - 16 - 19 update(4).xlsx
      - Worksheet: AY
      - Imported course rows: 6 to 80 inclusive (75 courses)
-     - Blacked-out Maths/English cells: 144
+     - Blacked-out Maths/English cells: 143
      - 15 blacked-out cells contain source text. They stay unavailable in the app,
        but that text is retained separately so the Excel download matches the source table.
 
@@ -1353,8 +1353,8 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "C1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: "C2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "C1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1385,8 +1385,8 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "C1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: "C2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "C1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1610,7 +1610,7 @@
       english: {
         fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
         plus: "G1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "G5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and/or English",
@@ -1641,8 +1641,8 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and/or English",
@@ -1673,8 +1673,8 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
-        plus: "H2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -1866,7 +1866,7 @@
       english: {
         fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
         plus: "G1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "G4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 4 in either Maths and/or English",
@@ -1930,7 +1930,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -1961,8 +1961,8 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths, any grade in English",
@@ -2664,8 +2664,8 @@
 
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
-        fs: "H1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: "H1", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
+        fs: "H2", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
+        plus: "H3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2697,7 +2697,7 @@
       // ENGLISH GROUPS ONLY — edit these separately from Maths.
       english: {
         fs: "G1", // ENGLISH — Functional Skills group from the latest grid. Change only this ENGLISH value if the official group moves.
-        plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
+        plus: "G2", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
         resit: "G2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
@@ -2794,7 +2794,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -2858,7 +2858,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: "D3", // ENGLISH — GCSE Plus group from the latest grid. Change only this ENGLISH value if the official group moves.
-        resit: "D4" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "D5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 2 in Maths and English",
@@ -2922,7 +2922,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
-        resit: "C3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "C2" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3004,7 +3004,7 @@
       campus: "AY",
       mainGroup: "E",
       faculty: "J - Construction & Technology",
-      area: "MOTV-AY",
+      area: "CONT-AY",
       name: "Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B",
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
@@ -3100,7 +3100,7 @@
       campus: "AY",
       mainGroup: "H",
       faculty: "J - Construction & Technology",
-      area: "MOTV-AY",
+      area: "CONT-AY",
       name: "Level 2 Technical Occupational Entry in Maintenance Operations (Diploma) - Group B",
 
       // MATHS GROUPS ONLY — these three lines control Maths allocations.
@@ -3114,7 +3114,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
-        resit: "H3" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H1" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
@@ -3402,7 +3402,7 @@
       english: {
         fs: null, // ENGLISH — Functional Skills unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
         plus: null, // ENGLISH — GCSE Plus unavailable / blacked out in the latest grid. Keep null unless this route officially opens.
-        resit: "H5" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
+        resit: "H1" // ENGLISH — GCSE Resit group from the latest grid. Change only this ENGLISH value if the official group moves.
       },
 
       entry: "Grade 3 in Maths and English",
